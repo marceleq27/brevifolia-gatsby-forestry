@@ -18,14 +18,10 @@ fields:
       format: markdown
   label: description
   description: Description
-- name: components
-  type: blocks
+- name: component-content
+  type: include
+  config: {}
+  template: content
   label: components
-  template_types:
-  - content
-  - button
-  config:
-    min: 
-    max: 
 pages:
 - content/blog/https-allegro.pl-oferta-miernik-tester-grubosci-lakieru-gl-smart-s-10555171436.md
