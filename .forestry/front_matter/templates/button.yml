@@ -1,4 +1,10 @@
 ---
 label: Button
 hide_body: true
-fields: []
+fields:
+- name: button
+  type: text
+  config:
+    required: true
+  label: Button
+  description: Type here
