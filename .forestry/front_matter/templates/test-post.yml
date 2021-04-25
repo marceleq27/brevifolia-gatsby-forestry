@@ -19,8 +19,7 @@ fields:
   label: description
   description: Description
 - name: components
-  type: field_group
-  config: {}
+  type: field_group_list
   fields:
   - name: text
     type: textarea
@@ -36,6 +35,10 @@ fields:
     config:
       required: true
     label: button
+  config:
+    min: 
+    max: 
+    labelField: 
   label: components
 pages:
 - content/blog/https-allegro.pl-oferta-miernik-tester-grubosci-lakieru-gl-smart-s-10555171436.md
