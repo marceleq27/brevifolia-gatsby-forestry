@@ -53,3 +53,18 @@ fields:
     labelField: 
   label: content
   description: Content
+- name: components
+  type: field_group
+  config: {}
+  fields:
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: content
+  label: Components
+  description: comp
