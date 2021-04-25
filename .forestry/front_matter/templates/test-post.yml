@@ -1,4 +1,55 @@
 ---
 label: test post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: title
+  description: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description
+  description: Description
+- name: content
+  type: field_group_list
+  fields:
+  - name: blog-content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: blog-content
+    description: Blog content
+  - name: build-in_components
+    type: select
+    default: ''
+    config:
+      required: false
+      options:
+      - CTA banner
+      - CTA blue text
+      - Button
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Build-in components
+    description: Build-in components
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: content
+  description: Content
