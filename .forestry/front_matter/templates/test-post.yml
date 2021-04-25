@@ -35,15 +35,17 @@ fields:
     type: field_group
     config: {}
     fields:
-    - name: comps
+    - name: components
       type: blocks
-      label: comps
+      label: components
       template_types:
       - button
+      - content
       config:
         min: 
         max: 
+      description: Choose a component
     label: components
     description: comp
-  label: Components
-  description: comp
+  label: Buildin components
+  description: Use component here
