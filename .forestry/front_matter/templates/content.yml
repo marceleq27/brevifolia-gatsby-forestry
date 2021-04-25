@@ -2,13 +2,12 @@
 label: Content
 hide_body: true
 fields:
-- name: content
-  type: textarea
-  default: ''
+- name: comp
+  type: blocks
+  label: comp
+  template_types:
+  - content
+  - button
   config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Content
-  description: Content
+    min: 
+    max: 
